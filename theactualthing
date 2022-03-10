@@ -1,0 +1,11 @@
+#Bill Splitter
+totalbill = input("enter your total bill")
+guests = input("how many people are joining you")
+total_bill = float(totalbill)
+guests = int(guests)
+billperperson = round(totalbill/guests,2)
+remainder = totalbill - billperperson * guests
+remainder = round(remainder,2)
+
+print(f"the bill each is {billperperson}")
+print(f"the remainder is {remainder}")
